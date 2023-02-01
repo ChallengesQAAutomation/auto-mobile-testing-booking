@@ -1,0 +1,12 @@
+# Compiled class files
+*.class
+.idea
+.gradle
+# Build directory
+target/
+
+# gradle driver executables
+gradle/
+
+# Serenity reports
+target/site/serenity/
