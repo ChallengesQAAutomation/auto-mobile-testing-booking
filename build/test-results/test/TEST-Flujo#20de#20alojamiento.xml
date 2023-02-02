@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Flujo de alojamiento" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-02T03:08:26" hostname="MacBook-Pro-de-MacBook.local" time="38.013">
+  <properties/>
+  <testcase name="Reserva de una habitacion" classname="Flujo de alojamiento" time="38.013">
+    <failure message="org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: 'GET /wd/hub/session/eba79a39-d944-4b48-91f0-ad527be444d3/window' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '17.0.4.1'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [eba79a39-d944-4b48-91f0-ad527be444d3, getCurrentWindowHandle {}]&#10;Capabilities {appium:app: /Users/luiscarlosmarca/Docu..., appium:appPackage: com.booking, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/luiscarlosmarca/Docu..., automationName: uiautomator2, deviceName: AutomationTesting, hub: http://localhost:4723/wd/hub, newCommandTimeout: 1000, platformName: android, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:hub: http://localhost:4723/wd/hub, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 1000, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: eba79a39-d944-4b48-91f0-ad527be444d3" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: 'GET /wd/hub/session/eba79a39-d944-4b48-91f0-ad527be444d3/window' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [eba79a39-d944-4b48-91f0-ad527be444d3, getCurrentWindowHandle {}]
+Capabilities {appium:app: /Users/luiscarlosmarca/Docu..., appium:appPackage: com.booking, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/luiscarlosmarca/Docu..., automationName: uiautomator2, deviceName: AutomationTesting, hub: http://localhost:4723/wd/hub, newCommandTimeout: 1000, platformName: android, platformVersion: 11.0}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:hub: http://localhost:4723/wd/hub, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 1000, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: eba79a39-d944-4b48-91f0-ad527be444d3
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.4.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base@17.0.4.1/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at app//io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at app//io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:465)
+	at app//net.thucydides.core.webdriver.WebDriverFacade.getWindowHandle(WebDriverFacade.java:333)
+	at app//net.serenitybdd.core.photography.WebDriverPhotoLens.alertIsDisplayedFor(WebDriverPhotoLens.java:46)
+	at app//net.serenitybdd.core.photography.WebDriverPhotoLens.canTakeScreenshot(WebDriverPhotoLens.java:35)
+	at app//net.serenitybdd.core.photography.PhotoSession.takeScreenshot(PhotoSession.java:47)
+	at app//net.serenitybdd.core.photography.PhotoSessionBooking.takeScreenshot(PhotoSessionBooking.java:36)
+	at app//net.thucydides.core.steps.BaseStepListener.screenshotFrom(BaseStepListener.java:1071)
+	at app//net.thucydides.core.steps.BaseStepListener.lambda$grabScreenshots$9(BaseStepListener.java:1061)
+	at java.base@17.0.4.1/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.4.1/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base@17.0.4.1/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base@17.0.4.1/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base@17.0.4.1/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base@17.0.4.1/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base@17.0.4.1/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at app//net.thucydides.core.steps.BaseStepListener.grabScreenshots(BaseStepListener.java:1063)
+	at app//net.thucydides.core.steps.BaseStepListener.take(BaseStepListener.java:955)
+	at app//net.thucydides.core.steps.BaseStepListener.takeEndOfStepScreenshotFor(BaseStepListener.java:936)
+	at app//net.thucydides.core.steps.BaseStepListener.stepFinished(BaseStepListener.java:782)
+	at app//net.thucydides.core.steps.StepEventBus.stepFinished(StepEventBus.java:479)
+	at app//io.cucumber.core.plugin.SerenityReporter.recordStepResult(SerenityReporter.java:834)
+	at app//io.cucumber.core.plugin.SerenityReporter.handleResult(SerenityReporter.java:823)
+	at app//io.cucumber.core.plugin.SerenityReporter.handleTestStepFinished(SerenityReporter.java:370)
+	at app//io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at app//io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at app//io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at app//io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:62)
+	at app//io.cucumber.core.runner.TestStep.emitTestStepFinished(TestStep.java:117)
+	at app//io.cucumber.core.runner.TestStep.run(TestStep.java:68)
+	at app//io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at app//io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at app//io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at app//io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at app//io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at app//io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+	at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:288)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.4.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[22:08:26.765 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/luiscarlosmarca/Documents/personales/Desafio%20Tecnico%20Yape/Projectos/auto-mobile-testing-booking/src/test/resources/features/login/JourneyBooking.feature
+22:08:26.900 [Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Reserva de una habitacion(flujo-de-alojamiento;reserva-de-una-habitacion)
+--------------------------------------------------------------------------------
+22:08:26.971 [Test worker] DEBUG net.thucydides.core.requirements.FileSystemRequirementsTagProvider - Loading requirements from directory: /Users/luiscarlosmarca/Documents/personales/Desafio Tecnico Yape/Projectos/auto-mobile-testing-booking/src/test/resources/features/login (/Users/luiscarlosmarca/Documents/personales/Desafio Tecnico Yape/Projectos/auto-mobile-testing-booking/src/test/resources/features/login)
+22:08:26.972 [Test worker] DEBUG net.thucydides.core.requirements.FileSystemRequirementsTagProvider - Get requirements type for: /Users/luiscarlosmarca/Documents/personales/Desafio Tecnico Yape/Projectos/auto-mobile-testing-booking/src/test/resources/features/login (/Users/luiscarlosmarca/Documents/personales/Desafio Tecnico Yape/Projectos/auto-mobile-testing-booking/src/test/resources/features/login)
+22:08:27.805 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .starter.Runner
+22:08:27.806 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .starter.stepdefinitions.IntroStepDefinitions
+22:08:27.806 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .starter.ui.IntroView
+22:08:27.807 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.istack.logging.StackHelper
+22:08:27.807 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector
+22:08:27.808 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+22:08:27.809 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory
+22:08:27.809 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory
+22:08:27.810 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.io.opentelemetry.sdk.internal.CurrentJavaVersionSpecific
+22:08:27.811 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.io.opentelemetry.sdk.internal.Java9VersionSpecific
+22:08:27.811 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.javax.xml.bind.ModuleUtil
+22:08:27.812 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.module-info
+22:08:27.813 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.org.junit.platform.commons.util.ModuleUtils
+22:08:28.191 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class com.google.gson.internal.
+22:08:28.347 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class com.sun.xml.bind.v2.runtime.output.FastInfosetStreamWriterOutput
+22:08:28.684 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class module-info
+22:08:30.814 [Test worker] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+22:08:30.819 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+22:08:30.820 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+22:08:30.825 [Test worker] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@599fab92
+22:08:30.846 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+22:08:30.846 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+22:08:30.849 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+22:08:30.850 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+22:08:30.850 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+22:08:30.852 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+22:08:30.853 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+22:08:30.854 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+22:08:30.855 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @175c2241
+22:08:30.856 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+22:08:30.857 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+22:08:30.871 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 536870912 bytes (maybe)
+22:08:30.871 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/hs/pt20z3q97hz5_yyn42ss6fmc0000gp/T (java.io.tmpdir)
+22:08:30.871 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+22:08:30.871 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+22:08:30.872 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+22:08:30.873 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+22:08:30.874 [Test worker] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+22:08:30.874 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+22:08:30.884 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+22:08:30.910 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+22:08:30.911 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+22:08:31.036 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+22:08:31.036 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+22:08:31.085 [Test worker] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+22:08:31.099 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+22:08:31.099 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+22:08:31.149 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 1
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 1
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+22:08:31.150 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+22:08:31.151 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+22:08:31.151 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 600000
+22:08:31.151 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+22:08:31.151 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+22:08:31.172 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+22:08:31.172 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+22:08:31.172 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+22:08:31.557 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 27273 (user-set)
+22:08:31.558 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 28:f0:76:ff:fe:16:65:0e (user-set)
+22:08:31.607 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+22:08:31.607 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+22:08:31.607 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6607c464
+22:08:31.619 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'POST' to '/wd/hub/session'
+22:08:31.658 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+22:08:31.658 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+22:08:31.658 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+22:08:31.658 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+22:08:45.274 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+22:08:45.275 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session HTTP/1.1
+X-Idempotency-Key: e8543d3e-7fb7-401e-a8df-bf28906172f8
+User-Agent: selenium/4.5.3 (java mac)
+Content-Length: 543
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"47f-09cPV66DNxzaWYKhSPkT6sf/6fA"
+Date: Thu, 02 Feb 2023 03:08:45 GMT
+Connection: keep-alive
+content-length: 1151
+
+22:08:45.295 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:08:46.394 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:4723 : 1
+22:08:46.416 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .starter.Runner
+22:08:46.419 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .starter.stepdefinitions.IntroStepDefinitions
+22:08:46.432 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class .starter.ui.IntroView
+22:08:46.435 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.istack.logging.StackHelper
+22:08:46.437 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector
+22:08:46.438 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+22:08:46.450 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory
+22:08:46.452 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedTransducedAccessorFactory
+22:08:46.459 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.io.opentelemetry.sdk.internal.CurrentJavaVersionSpecific
+22:08:46.461 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.io.opentelemetry.sdk.internal.Java9VersionSpecific
+22:08:46.461 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.javax.xml.bind.ModuleUtil
+22:08:46.462 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.module-info
+22:08:46.463 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class META-INF.versions.9.org.junit.platform.commons.util.ModuleUtils
+22:08:46.468 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class com.google.gson.internal.
+22:08:46.471 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class com.sun.xml.bind.v2.runtime.output.FastInfosetStreamWriterOutput
+22:08:46.480 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class module-info
+22:08:46.555 [Forwarding newSession on session null to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/wd/hub/session'
+22:08:46.555 [Forwarding newSession on session null to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for POST '/wd/hub/session'
+22:08:56.356 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session HTTP/1.1
+X-Idempotency-Key: 2e6399f0-204f-4780-a70f-966861e404c6
+User-Agent: selenium/4.5.3 (java mac)
+Content-Length: 543
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"47f-eTrzbKrKDqibCZ6So6pPHocGdpk"
+Date: Thu, 02 Feb 2023 03:08:56 GMT
+Connection: keep-alive
+content-length: 1151
+
+22:08:56.359 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:08:56.981 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+22:08:56.985 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+22:08:57.006 [Forwarding getCurrentWindowHandle on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window'
+22:08:57.006 [Forwarding getCurrentWindowHandle on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window'
+22:08:57.040 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"dc9-1p46SNnIG6GxUYvzfhKldWCLeEA"
+Date: Thu, 02 Feb 2023 03:08:57 GMT
+Connection: keep-alive
+content-length: 3529
+
+22:08:57.041 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:08:57.127 [Forwarding screenshot on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot'
+22:08:57.127 [Forwarding screenshot on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot'
+22:08:58.316 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"11e22-kHuO5tgdW0BAQJ9ctZXZ7avvZsw"
+Date: Thu, 02 Feb 2023 03:08:58 GMT
+Connection: keep-alive
+content-length: 73250
+
+22:08:58.318 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:08:58.326 [Test worker] WARN net.thucydides.core.webdriver.WebDriverFacade - Failed to take screenshot (Illegal base64 character a)
+22:08:58.340 [Forwarding getPageSource on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/source'
+22:08:58.341 [Forwarding getPageSource on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/source'
+22:08:58.896 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/source HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"46a0-qABW7MnMWCEouXjeEeJcOXfh530"
+Date: Thu, 02 Feb 2023 03:08:58 GMT
+Connection: keep-alive
+content-length: 18080
+
+22:08:58.897 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:08:59.010 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IntroStepDefinitions.elUsuarioQuiereHacerUnaReservaEnLaCiudadDe - {0} clicks on #target
+22:08:59.012 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton para cerrar el intro 
+22:08:59.175 [Forwarding findElement on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element'
+22:08:59.179 [Forwarding findElement on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for POST '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element'
+22:09:00.024 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Content-Length: 106
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-09Vptm7nPqHwdd0VW3QhoLdjFKM"
+Date: Thu, 02 Feb 2023 03:09:00 GMT
+Connection: keep-alive
+content-length: 137
+
+22:09:00.026 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:00.041 [Forwarding isElementDisplayed on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element/00000000-0000-0013-ffff-ffff00000032/displayed'
+22:09:00.042 [Forwarding isElementDisplayed on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element/00000000-0000-0013-ffff-ffff00000032/displayed'
+22:09:00.072 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element/00000000-0000-0013-ffff-ffff00000032/displayed HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Thu, 02 Feb 2023 03:09:00 GMT
+Connection: keep-alive
+content-length: 14
+
+22:09:00.073 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:00.090 [Forwarding findElement on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element'
+22:09:00.090 [Forwarding findElement on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for POST '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element'
+22:09:00.958 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Content-Length: 106
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"89-09Vptm7nPqHwdd0VW3QhoLdjFKM"
+Date: Thu, 02 Feb 2023 03:09:00 GMT
+Connection: keep-alive
+content-length: 137
+
+22:09:00.959 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:00.963 [Forwarding clickElement on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element/00000000-0000-0013-ffff-ffff00000032/click'
+22:09:00.964 [Forwarding clickElement on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for POST '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element/00000000-0000-0013-ffff-ffff00000032/click'
+22:09:01.075 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/element/00000000-0000-0013-ffff-ffff00000032/click HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Thu, 02 Feb 2023 03:09:01 GMT
+Connection: keep-alive
+content-length: 14
+
+22:09:01.078 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:01.136 [Forwarding getCurrentWindowHandle on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window'
+22:09:01.136 [Forwarding getCurrentWindowHandle on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window'
+22:09:01.181 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"dc9-1p46SNnIG6GxUYvzfhKldWCLeEA"
+Date: Thu, 02 Feb 2023 03:09:01 GMT
+Connection: keep-alive
+content-length: 3529
+
+22:09:01.182 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:01.190 [Forwarding screenshot on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot'
+22:09:01.191 [Forwarding screenshot on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot'
+22:09:02.959 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"2f8be-nJwBy14Wq8GSydysU84xGOPcQbg"
+Date: Thu, 02 Feb 2023 03:09:02 GMT
+Connection: keep-alive
+content-length: 194750
+
+22:09:02.966 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:03.096 [Test worker] WARN net.thucydides.core.webdriver.WebDriverFacade - Failed to take screenshot (Illegal base64 character a)
+22:09:03.100 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+melo
+22:09:03.161 [Forwarding getCurrentWindowHandle on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window'
+22:09:03.161 [Forwarding getCurrentWindowHandle on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window'
+22:09:03.187 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/window HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"dc9-1p46SNnIG6GxUYvzfhKldWCLeEA"
+Date: Thu, 02 Feb 2023 03:09:03 GMT
+Connection: keep-alive
+content-length: 3529
+
+22:09:03.188 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:03.263 [Forwarding screenshot on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot'
+22:09:03.269 [Forwarding screenshot on session c7da42db-c0c8-47c0-b23c-a2930bc6d38a to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot'
+22:09:04.578 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/c7da42db-c0c8-47c0-b23c-a2930bc6d38a/screenshot HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"e358-38L6Vq5PqOuCTLkzWyIB6OoWoKI"
+Date: Thu, 02 Feb 2023 03:09:04 GMT
+Connection: keep-alive
+content-length: 58200
+
+22:09:04.579 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+22:09:04.584 [Test worker] WARN net.thucydides.core.webdriver.WebDriverFacade - Failed to take screenshot (Illegal base64 character a)
+22:09:04.634 [Forwarding getCurrentWindowHandle on session eba79a39-d944-4b48-91f0-ad527be444d3 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/wd/hub/session/eba79a39-d944-4b48-91f0-ad527be444d3/window'
+22:09:04.635 [Forwarding getCurrentWindowHandle on session eba79a39-d944-4b48-91f0-ad527be444d3 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723] for GET '/wd/hub/session/eba79a39-d944-4b48-91f0-ad527be444d3/window'
+22:09:04.660 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /wd/hub/session/eba79a39-d944-4b48-91f0-ad527be444d3/window HTTP/1.1
+User-Agent: selenium/4.5.3 (java mac)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+ETag: W/"465-M5MNZ1URLyBstL088ebTE9vv8hA"
+Date: Thu, 02 Feb 2023 03:09:04 GMT
+Connection: keep-alive
+content-length: 1125
+
+22:09:04.662 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:4723 for channel [id: 0x0f19aff6, L:/127.0.0.1:49499 - R:localhost/127.0.0.1:4723]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
