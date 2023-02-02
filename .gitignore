@@ -8,7 +8,6 @@ target/
 # gradle driver executables
 gradle/
 history/
-build/
-
+build/*
 # Serenity reports
 target/site/serenity/
