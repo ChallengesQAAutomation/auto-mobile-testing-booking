@@ -1,28 +1,31 @@
 package starter.tasks;
 
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.SendKeys;
+import starter.ui.SearchView;
 
-import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static starter.ui.LoginView.BTN_CLOSE;
+import static starter.ui.SearchView.linkFirstOption;
 
 public class ToSearch implements Task {
-    String city;
+
+    private final String city;
 
     public ToSearch(String city) {
         this.city = city;
     }
 
-    public static ToSearch ofCity(String city) {
-        return instrumented(ToSearch.class,city);
+    public static Performable of(String city) {
+        return new ToSearch(city);
     }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_CLOSE)
+                SendKeys.of(city).into(SearchView.txtSearchCity),
+                Click.on(linkFirstOption)
         );
     }
 }
