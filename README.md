@@ -6,5 +6,6 @@ Automatizacion de aplicacion de bookiing
 
 - JDK 16
 - Android Studio (Emulador)
+  - Android 11.0
 - SDK Android
 - Appium 1.22.

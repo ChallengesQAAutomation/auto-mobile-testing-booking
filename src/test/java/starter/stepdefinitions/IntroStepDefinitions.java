@@ -3,13 +3,12 @@ package starter.stepdefinitions;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.Managed;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import starter.intractions.CloseView;
+import starter.tasks.ToSearch;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
@@ -32,15 +31,11 @@ public class IntroStepDefinitions {
     }
 
     @Given("el usuario quiere hacer una reserva en la ciudad de {string}")
-    public void elUsuarioQuiereHacerUnaReservaEnLaCiudadDe(String arg0) {
+    public void elUsuarioQuiereHacerUnaReservaEnLaCiudadDe(String city) {
         theActorCalled("Jhon")
                 .can(BrowseTheWeb.with(hisMobileDevice));
-
-         Target BTN_CLOSE= Target.the("Boton para cerrar el intro ")
-                .located(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]"));
-
-        theActorCalled("Jhon").attemptsTo(Click.on(BTN_CLOSE));
-        System.out.println("melo");
+        theActorCalled("Jhon").attemptsTo(CloseView.ofIntro());
+        theActorCalled("Jhon").attemptsTo(ToSearch.ofCity(city));
 
     }
 }
