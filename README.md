@@ -1,6 +1,7 @@
 
-# auto-mobile-testing-booking
-Automatizacion de aplicacion de bookiing
+# Automatizacion de aplicacion de bookiing
+
+Este proyecto de automatización se centra en la automatización de pruebas móviles utilizando Appium. Se implementa en Java utilizando Selenium WebDriver y se gestionan las dependencias con Gradle. Se utilizan emuladores de Android para realizar pruebas exhaustivas y garantizar la calidad del producto.
 
 
 # Requisitos
